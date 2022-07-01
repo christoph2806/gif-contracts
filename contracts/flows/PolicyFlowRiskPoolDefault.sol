@@ -117,6 +117,11 @@ contract PolicyFlowDefault is
 
         _payoutId = policy.createPayout(_bpKey, _claimId, _data);
         getPoolContract.??? // TODO what happens with the pool?
+        // TODO should we mirror the claim/payout topology in the RiskPool?
+        // e.g. on confirmClaim, we reserve funds for payout
+        // on payout, we take the reserved funds and send them somewhere.
+        // we need to define the semantics of claims/payout
+
     }
 
     function declineClaim(bytes32 _bpKey, uint256 _claimId) external {
@@ -138,7 +143,7 @@ contract PolicyFlowDefault is
         );
 
         policy.setPolicyState(_bpKey, IPolicy.PolicyState.Expired);
-        getPoolContract.??? // TODO freeCapacity
+        getPoolContract.deallocate(...) // TODO freeCapacity
     }
 
     function payout(
@@ -148,7 +153,8 @@ contract PolicyFlowDefault is
         bytes calldata _data
     ) external {
         getPolicyContract().payOut(_bpKey, _payoutId, _complete, _data);
-        getPoolContract().??? // TODO request funds from Pool
+        getPoolContract().requestPayout(...) // TODO request funds from Pool
+        // TODO what happens if this fails?
     }
 
     function request(
