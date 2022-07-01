@@ -2,9 +2,11 @@
 pragma solidity ^0.8.0;
 
 import "../modules/ComponentController.sol";
+import "../modules/PolicyController.sol";
 import "../shared/CoreController.sol";
 import "../services/InstanceOperatorService.sol";
 import "@gif-interface/contracts/components/IComponent.sol";
+import "@gif-interface/contracts/modules/IPolicy.sol";
 import "@gif-interface/contracts/modules/IRegistry.sol";
 import "@gif-interface/contracts/services/IComponentOwnerService.sol";
 import "@gif-interface/contracts/services/IInstanceService.sol";
@@ -17,6 +19,8 @@ contract InstanceService is
     CoreController
 {
     bytes32 public constant COMPONENT_NAME = "Component";
+    bytes32 public constant POLICY_NAME = "Policy";
+
     bytes32 public constant COMPONENT_OWNER_SERVICE_NAME = "ComponentOwnerService";
     bytes32 public constant INSTANCE_OPERATOR_SERVICE_NAME = "InstanceOperatorService";
     bytes32 public constant ORACLE_SERVICE_NAME = "OracleService";
@@ -39,11 +43,12 @@ contract InstanceService is
         return IProductService(_getContractAddress(PRODUCT_SERVICE_NAME));
     }
 
-    function getOwner() external view returns(address) {
+    function getOwner() external override view returns(address) {
         InstanceOperatorService ios = InstanceOperatorService(_getContractAddress(INSTANCE_OPERATOR_SERVICE_NAME));
         return ios.owner();
     }
 
+    // TODO decide how to protect registry access
     function getRegistry() external view returns(IRegistry service) {
         return _registry;
     }
@@ -77,7 +82,7 @@ contract InstanceService is
         return _component().oracles();
     }
 
-    function riskPools() external override view returns(uint256) {
+    function riskpools() external override view returns(uint256) {
         return _component().riskpools();
     }
 
@@ -85,7 +90,7 @@ contract InstanceService is
         return _component().getComponent(id);
     }
 
-    // service staking
+    /* service staking */
     function getStakingRequirements(uint256 id) 
         external override 
         view 
@@ -100,6 +105,40 @@ contract InstanceService is
         returns(bytes memory data) 
     {
         revert("ERROR:IS-002:IMPLEMENATION_MISSING");
+    }
+
+    /* policy */
+    function getMetadata(bytes32 bpKey) external view returns(IPolicy.Metadata memory metadata) {
+        metadata = _policy().getMetadata(bpKey);
+    }
+
+    function getApplication(bytes32 processId) external override view returns(IPolicy.Application memory application) {
+        application = _policy().getApplication(processId);
+    }
+
+    function getPolicy(bytes32 processId) external override view returns(IPolicy.Policy memory policy) {
+        policy = _policy().getPolicy(processId);
+    }
+    
+    function claims(bytes32 processId) external override view returns(uint256 numberOfClaims) {
+        numberOfClaims = _policy().getMetadata(processId).claimsCount;
+    }
+    
+    function payouts(bytes32 processId) external override view returns(uint256 numberOfPayouts) {
+        numberOfPayouts = _policy().getMetadata(processId).payoutsCount;
+    }
+    
+    function getClaim(bytes32 processId, uint256 claimId) external override view returns (IPolicy.Claim memory claim) {
+        claim = _policy().getClaim(processId, claimId);
+    }
+    
+    function getPayout(bytes32 processId, uint256 payoutId) external override view returns (IPolicy.Payout memory payout) {
+        payout = _policy().getPayout(processId, payoutId);
+    }
+    
+    /* internal functions */
+    function _policy() internal view returns(PolicyController) {
+        return PolicyController(_getContractAddress(POLICY_NAME));
     }
 
     function _component() internal view returns(ComponentController) {

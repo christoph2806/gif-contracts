@@ -11,34 +11,20 @@ contract ProductService is
     // CoreController
     Context
  {
-    event LogPsDummy1 (
-        address licenceAddress
-    );
-
-    event LogPsDummy2 (
-        uint256 id,
-        bool isAuthorized,
-        address policyFlowAddress
-    );
-
     bytes32 public constant NAME = "ProductService";
 
     // solhint-disable-next-line no-empty-blocks
     constructor(address _registry) WithRegistry(_registry) {}
 
     fallback() external {
-
-        emit LogPsDummy1(address(_license()));
-
         (uint256 id, bool isAuthorized, address policyFlow) = _license().getAuthorizationStatus(_msgSender());
-
-        emit LogPsDummy2(id, isAuthorized, policyFlow);
 
         require(isAuthorized, "ERROR:PRS-001:NOT_AUTHORIZED");
         require(policyFlow != address(0),"ERROR:PRS-002:POLICY_FLOW_NOT_RESOLVED");
 
         _delegate(policyFlow);
     }
+    
 
     /**
      * @dev Delegates the current call to `implementation`.
@@ -71,11 +57,6 @@ contract ProductService is
             }
         }
     }
-
-    // function _license() internal view returns (ILicense) {
-    //     address licenseAddress = _getContractAddress("License");
-    //     return ILicense(licenseAddress);
-    // }
     
     function _license() internal view returns (ILicense) {
         return ILicense(registry.getContract("License"));
