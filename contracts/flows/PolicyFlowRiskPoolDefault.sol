@@ -74,12 +74,13 @@ contract PolicyFlowDefault is
                 IPolicy.ApplicationState.Applied,
             "ERROR:PFD-001:INVALID_APPLICATION_STATE"
         );
+        require(pool.allocateCapacity(...), "ERROR:PFD-00; // TODO parameters?
+
         policy.setApplicationState(
             _bpKey,
             IPolicy.ApplicationState.Underwritten
         );
         policy.createPolicy(_bpKey);
-        pool.allocateCapacity(...); // TODO parameters?
     }
 
     function decline(bytes32 _bpKey) external {
