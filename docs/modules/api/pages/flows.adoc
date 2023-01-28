@@ -29,7 +29,15 @@
 :xref-PolicyDefaultFlow-getPolicyContract--: xref:flows.adoc#PolicyDefaultFlow-getPolicyContract--
 :xref-PolicyDefaultFlow-getQueryContract--: xref:flows.adoc#PolicyDefaultFlow-getQueryContract--
 :xref-PolicyDefaultFlow-getTreasuryContract--: xref:flows.adoc#PolicyDefaultFlow-getTreasuryContract--
-This is a test README
+:xref-WithRegistry-getContractFromRegistry-bytes32-: xref:shared.adoc#WithRegistry-getContractFromRegistry-bytes32-
+:xref-WithRegistry-getContractInReleaseFromRegistry-bytes32-bytes32-: xref:shared.adoc#WithRegistry-getContractInReleaseFromRegistry-bytes32-bytes32-
+:xref-WithRegistry-getReleaseFromRegistry--: xref:shared.adoc#WithRegistry-getReleaseFromRegistry--
+= Flows
+
+[.readme-notice]
+NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/flows
+
+== Contracts
 
 :NAME: pass:normal[xref:#PolicyDefaultFlow-NAME-bytes32[`++NAME++`]]
 :onlyActivePolicy: pass:normal[xref:#PolicyDefaultFlow-onlyActivePolicy-bytes32-[`++onlyActivePolicy++`]]
@@ -72,15 +80,9 @@ This is a test README
 import "@openzeppelin/contracts/flows/PolicyDefaultFlow.sol";
 ```
 
-Core of the governance system, designed to be extended though various modules.
+This contract defines the high-level lifecycle of a policy.
 
-This contract is abstract and requires several function to be implemented in various modules:
-
-- A counting module must implement {quorum}, {_quorumReached}, {_voteSucceeded} and {_countVote}
-- A voting module must implement {_getVotes}
-- Additionally, the {votingPeriod} must also be implemented
-
-_Available since v4.3._
+The contract ensures that all state transistions are always valid.
 
 [.contract-index]
 .Modifiers

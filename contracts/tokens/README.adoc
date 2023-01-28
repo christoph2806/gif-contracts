@@ -1,1 +1,10 @@
-This is README
+= Tokens
+
+[.readme-notice]
+NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/tokens
+
+== Contracts
+
+{{BundleToken}}
+
+{{RiskpoolToken}}

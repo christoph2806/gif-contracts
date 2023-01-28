@@ -14,9 +14,7 @@ module.exports = {
         while (dir.startsWith(sourcesDir)) {
             dir = path.dirname(dir);
             if (fs.existsSync(path.join(dir, 'README.adoc'))) {
-                console.log(file);
                 const result = path.relative(sourcesDir, dir) + config.pageExtension;
-                console.log(`Found README for ${file.relativePath} at ${result}`);
                 return result;
             }
         }

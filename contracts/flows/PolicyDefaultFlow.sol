@@ -14,15 +14,11 @@ import "@etherisc/gif-interface/contracts/modules/IRegistry.sol";
 import "@etherisc/gif-interface/contracts/modules/IPool.sol";
 
 /**
- * @dev Core of the governance system, designed to be extended though various modules.
+ * @dev This contract defines the high-level lifecycle of a policy.
  *
- * This contract is abstract and requires several function to be implemented in various modules:
+ * The contract ensures that all state transistions are always valid.
  *
- * - A counting module must implement {quorum}, {_quorumReached}, {_voteSucceeded} and {_countVote}
- * - A voting module must implement {_getVotes}
- * - Additionally, the {votingPeriod} must also be implemented
  *
- * _Available since v4.3._
  */
 contract PolicyDefaultFlow is WithRegistry {
     bytes32 public constant NAME = "PolicyDefaultFlow";
