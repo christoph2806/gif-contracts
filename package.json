@@ -24,6 +24,9 @@
   "bugs": {
     "url": "https://github.com/etherisc/gif-contracts/issues"
   },
+  "scripts": {
+    "prepare-docs": "scripts/prepare-docs.sh"
+  }
   "dependencies": {
     "@chainlink/contracts": "0.4.1",
     "@etherisc/gif-interface": "2.0.0-rc.1-0",
