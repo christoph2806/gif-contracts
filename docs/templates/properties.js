@@ -25,14 +25,17 @@ module.exports.externalLink = function ({ item, contract }) {
         '@etherisc/gif-interface': 'https://github.com/etherisc/gif-interface/blob/develop',
         '@openzeppelin': 'https://docs.openzeppelin.com/contracts/4.x/api'
     };
+
     const path = item.__item_context.file.absolutePath;
     for (const [key, value] of Object.entries(links)) {
         if (path.startsWith(key)) {
             if (key === '@openzeppelin') {
-                const s = /contracts\/([^\/]+)\/.*$/;
-                const mod = path.match(s)[1];
-                console.log(path, mod)
-                return value + '/' + mod + '#' + anchor;
+                const s1 = /contracts\/([^\/]+)\/.*$/;
+                const s2 = /contracts\/(.*)\/.*$/;
+                const mod1 = path.match(s1)[1];
+                const mod2 = path.match(s2)[1];
+                console.log(path, mod1, mod2)
+                return value + '/' + (mod1 === 'token' ? mod2 : mod1) + '#' + anchor;
             } else {
                 return value + path.slice(key.length);
             }
