@@ -1,6 +1,6 @@
 const { version } = require('../../package.json');
 
-module.exports['oz-version'] = () => version;
+module.exports['gif-version'] = () => version;
 
 module.exports['readme-path'] = (opts) => {
     return 'contracts/' + opts.data.root.id.replace(/\.adoc$/, '') + '/README.adoc';
