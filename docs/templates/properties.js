@@ -17,6 +17,33 @@ module.exports.anchor = function anchor({ item, contract }) {
     return res;
 };
 
+module.exports.externalLink = function ({ item, contract }) {
+
+    const anchor = module.exports.anchor({ item, contract });
+    // TODO: exchange this against links to the actual docs
+    const links = {
+        '@etherisc/gif-interface': 'https://github.com/etherisc/gif-interface/blob/develop',
+        '@openzeppelin': 'https://docs.openzeppelin.com/contracts/4.x/api'
+    };
+    const path = item.__item_context.file.absolutePath;
+    for (const [key, value] of Object.entries(links)) {
+        if (path.startsWith(key)) {
+            if (key === '@openzeppelin') {
+                const s = /.*\/([^\/]+)\/.*$/;
+                const mod = path.match(s)[1];
+                return value + '/' + mod + '#' + anchor;
+            } else {
+                return value + path.slice(key.length);
+            }
+        }
+    }
+    return "";
+};
+
+module.exports.isInternal = function ({ item, contract }) {
+    return module.exports.externalLink({ item, contract }) === "";
+}
+
 module.exports.inheritance = function ({ item, build }) {
     if (!isNodeType('ContractDefinition', item)) {
         throw new Error('used inherited-items on non-contract');
@@ -28,6 +55,7 @@ module.exports.inheritance = function ({ item, build }) {
 };
 
 module.exports['has-functions'] = function ({ item }) {
+    // console.log(item.inheritance)
     return item.inheritance.some(c => c.functions.length > 0);
 };
 

@@ -261,23 +261,23 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .AccessControlEnumerable
-* {xref-AccessControlEnumerable-supportsInterface-bytes4-}[`++supportsInterface(interfaceId)++`]
-* {xref-AccessControlEnumerable-getRoleMember-bytes32-uint256-}[`++getRoleMember(role, index)++`]
-* {xref-AccessControlEnumerable-getRoleMemberCount-bytes32-}[`++getRoleMemberCount(role)++`]
-* {xref-AccessControlEnumerable-_grantRole-bytes32-address-}[`++_grantRole(role, account)++`]
-* {xref-AccessControlEnumerable-_revokeRole-bytes32-address-}[`++_revokeRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-supportsInterface-bytes4-[`++supportsInterface(interfaceId)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-getRoleMember-bytes32-uint256-[`++getRoleMember(role, index)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-getRoleMemberCount-bytes32-[`++getRoleMemberCount(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-_grantRole-bytes32-address-[`++_grantRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-_revokeRole-bytes32-address-[`++_revokeRole(role, account)++`]
 
 [.contract-subindex-inherited]
 .AccessControl
-* {xref-AccessControl-hasRole-bytes32-address-}[`++hasRole(role, account)++`]
-* {xref-AccessControl-_checkRole-bytes32-}[`++_checkRole(role)++`]
-* {xref-AccessControl-_checkRole-bytes32-address-}[`++_checkRole(role, account)++`]
-* {xref-AccessControl-getRoleAdmin-bytes32-}[`++getRoleAdmin(role)++`]
-* {xref-AccessControl-grantRole-bytes32-address-}[`++grantRole(role, account)++`]
-* {xref-AccessControl-revokeRole-bytes32-address-}[`++revokeRole(role, account)++`]
-* {xref-AccessControl-renounceRole-bytes32-address-}[`++renounceRole(role, account)++`]
-* {xref-AccessControl-_setupRole-bytes32-address-}[`++_setupRole(role, account)++`]
-* {xref-AccessControl-_setRoleAdmin-bytes32-bytes32-}[`++_setRoleAdmin(role, adminRole)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-hasRole-bytes32-address-[`++hasRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_checkRole-bytes32-[`++_checkRole(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_checkRole-bytes32-address-[`++_checkRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-getRoleAdmin-bytes32-[`++getRoleAdmin(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-grantRole-bytes32-address-[`++grantRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-revokeRole-bytes32-address-[`++revokeRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-renounceRole-bytes32-address-[`++renounceRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_setupRole-bytes32-address-[`++_setupRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_setRoleAdmin-bytes32-bytes32-[`++_setRoleAdmin(role, adminRole)++`]
 
 [.contract-subindex-inherited]
 .ERC165
@@ -298,7 +298,7 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IAccess
@@ -326,16 +326,16 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .IAccessControl
-* {xref-IAccessControl-RoleAdminChanged-bytes32-bytes32-bytes32-}[`++RoleAdminChanged(role, previousAdminRole, newAdminRole)++`]
-* {xref-IAccessControl-RoleGranted-bytes32-address-address-}[`++RoleGranted(role, account, sender)++`]
-* {xref-IAccessControl-RoleRevoked-bytes32-address-address-}[`++RoleRevoked(role, account, sender)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleAdminChanged-bytes32-bytes32-bytes32-[`++RoleAdminChanged(role, previousAdminRole, newAdminRole)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleGranted-bytes32-address-address-[`++RoleGranted(role, account, sender)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleRevoked-bytes32-address-address-[`++RoleRevoked(role, account, sender)++`]
 
 [.contract-subindex-inherited]
 .CoreController
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IAccess
@@ -477,7 +477,7 @@ import "@etherisc/gif-contracts/contracts/modules/BundleController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IBundle
@@ -493,17 +493,17 @@ import "@etherisc/gif-contracts/contracts/modules/BundleController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IBundle
-* {xref-IBundle-LogBundleCreated-uint256-uint256-address-enum-IBundle-BundleState-uint256-}[`++LogBundleCreated(bundleId, riskpoolId, owner, state, amount)++`]
-* {xref-IBundle-LogBundleStateChanged-uint256-enum-IBundle-BundleState-enum-IBundle-BundleState-}[`++LogBundleStateChanged(bundleId, oldState, newState)++`]
-* {xref-IBundle-LogBundleCapitalProvided-uint256-address-uint256-uint256-}[`++LogBundleCapitalProvided(bundleId, sender, amount, capacity)++`]
-* {xref-IBundle-LogBundleCapitalWithdrawn-uint256-address-uint256-uint256-}[`++LogBundleCapitalWithdrawn(bundleId, recipient, amount, capacity)++`]
-* {xref-IBundle-LogBundlePolicyCollateralized-uint256-bytes32-uint256-uint256-}[`++LogBundlePolicyCollateralized(bundleId, processId, amount, capacity)++`]
-* {xref-IBundle-LogBundlePayoutProcessed-uint256-bytes32-uint256-}[`++LogBundlePayoutProcessed(bundleId, processId, amount)++`]
-* {xref-IBundle-LogBundlePolicyReleased-uint256-bytes32-uint256-uint256-}[`++LogBundlePolicyReleased(bundleId, processId, amount, capacity)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundleCreated(bundleId, riskpoolId, owner, state, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundleStateChanged(bundleId, oldState, newState)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundleCapitalProvided(bundleId, sender, amount, capacity)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundleCapitalWithdrawn(bundleId, recipient, amount, capacity)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundlePolicyCollateralized(bundleId, processId, amount, capacity)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundlePayoutProcessed(bundleId, processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IBundle.sol[`++LogBundlePolicyReleased(bundleId, processId, amount, capacity)++`]
 
 --
 
@@ -709,7 +709,7 @@ import "@etherisc/gif-contracts/contracts/modules/ComponentController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -725,19 +725,19 @@ import "@etherisc/gif-contracts/contracts/modules/ComponentController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
-* {xref-IComponentEvents-LogComponentProposed-bytes32-enum-IComponent-ComponentType-address-uint256-}[`++LogComponentProposed(componentName, componentType, componentAddress, id)++`]
-* {xref-IComponentEvents-LogComponentApproved-uint256-}[`++LogComponentApproved(id)++`]
-* {xref-IComponentEvents-LogComponentDeclined-uint256-}[`++LogComponentDeclined(id)++`]
-* {xref-IComponentEvents-LogComponentSuspended-uint256-}[`++LogComponentSuspended(id)++`]
-* {xref-IComponentEvents-LogComponentResumed-uint256-}[`++LogComponentResumed(id)++`]
-* {xref-IComponentEvents-LogComponentPaused-uint256-}[`++LogComponentPaused(id)++`]
-* {xref-IComponentEvents-LogComponentUnpaused-uint256-}[`++LogComponentUnpaused(id)++`]
-* {xref-IComponentEvents-LogComponentArchived-uint256-}[`++LogComponentArchived(id)++`]
-* {xref-IComponentEvents-LogComponentStateChanged-uint256-enum-IComponent-ComponentState-enum-IComponent-ComponentState-}[`++LogComponentStateChanged(id, stateOld, stateNew)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentProposed(componentName, componentType, componentAddress, id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentApproved(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentDeclined(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentSuspended(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentResumed(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentPaused(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentUnpaused(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentArchived(id)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IComponentEvents.sol[`++LogComponentStateChanged(id, stateOld, stateNew)++`]
 
 --
 
@@ -895,7 +895,7 @@ import "@etherisc/gif-contracts/contracts/modules/LicenseController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .ILicense
@@ -911,7 +911,7 @@ import "@etherisc/gif-contracts/contracts/modules/LicenseController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .ILicense
@@ -1012,7 +1012,7 @@ import "@etherisc/gif-contracts/contracts/modules/PolicyController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IPolicy
@@ -1028,29 +1028,29 @@ import "@etherisc/gif-contracts/contracts/modules/PolicyController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IPolicy
-* {xref-IPolicy-LogMetadataCreated-address-bytes32-uint256-enum-IPolicy-PolicyFlowState-}[`++LogMetadataCreated(owner, processId, productId, state)++`]
-* {xref-IPolicy-LogMetadataStateChanged-bytes32-enum-IPolicy-PolicyFlowState-}[`++LogMetadataStateChanged(processId, state)++`]
-* {xref-IPolicy-LogApplicationCreated-bytes32-uint256-uint256-}[`++LogApplicationCreated(processId, premiumAmount, sumInsuredAmount)++`]
-* {xref-IPolicy-LogApplicationRevoked-bytes32-}[`++LogApplicationRevoked(processId)++`]
-* {xref-IPolicy-LogApplicationUnderwritten-bytes32-}[`++LogApplicationUnderwritten(processId)++`]
-* {xref-IPolicy-LogApplicationDeclined-bytes32-}[`++LogApplicationDeclined(processId)++`]
-* {xref-IPolicy-LogPolicyCreated-bytes32-}[`++LogPolicyCreated(processId)++`]
-* {xref-IPolicy-LogPolicyExpired-bytes32-}[`++LogPolicyExpired(processId)++`]
-* {xref-IPolicy-LogPolicyClosed-bytes32-}[`++LogPolicyClosed(processId)++`]
-* {xref-IPolicy-LogPremiumCollected-bytes32-uint256-}[`++LogPremiumCollected(processId, amount)++`]
-* {xref-IPolicy-LogApplicationSumInsuredAdjusted-bytes32-uint256-uint256-}[`++LogApplicationSumInsuredAdjusted(processId, sumInsuredAmountOld, sumInsuredAmount)++`]
-* {xref-IPolicy-LogApplicationPremiumAdjusted-bytes32-uint256-uint256-}[`++LogApplicationPremiumAdjusted(processId, premiumAmountOld, premiumAmount)++`]
-* {xref-IPolicy-LogPolicyPremiumAdjusted-bytes32-uint256-uint256-}[`++LogPolicyPremiumAdjusted(processId, premiumExpectedAmountOld, premiumExpectedAmount)++`]
-* {xref-IPolicy-LogClaimCreated-bytes32-uint256-uint256-}[`++LogClaimCreated(processId, claimId, claimAmount)++`]
-* {xref-IPolicy-LogClaimConfirmed-bytes32-uint256-uint256-}[`++LogClaimConfirmed(processId, claimId, confirmedAmount)++`]
-* {xref-IPolicy-LogClaimDeclined-bytes32-uint256-}[`++LogClaimDeclined(processId, claimId)++`]
-* {xref-IPolicy-LogClaimClosed-bytes32-uint256-}[`++LogClaimClosed(processId, claimId)++`]
-* {xref-IPolicy-LogPayoutCreated-bytes32-uint256-uint256-uint256-}[`++LogPayoutCreated(processId, claimId, payoutId, amount)++`]
-* {xref-IPolicy-LogPayoutProcessed-bytes32-uint256-}[`++LogPayoutProcessed(processId, payoutId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogMetadataCreated(owner, processId, productId, state)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogMetadataStateChanged(processId, state)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationCreated(processId, premiumAmount, sumInsuredAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationRevoked(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationUnderwritten(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationDeclined(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPolicyCreated(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPolicyExpired(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPolicyClosed(processId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPremiumCollected(processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationSumInsuredAdjusted(processId, sumInsuredAmountOld, sumInsuredAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogApplicationPremiumAdjusted(processId, premiumAmountOld, premiumAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPolicyPremiumAdjusted(processId, premiumExpectedAmountOld, premiumExpectedAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogClaimCreated(processId, claimId, claimAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogClaimConfirmed(processId, claimId, confirmedAmount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogClaimDeclined(processId, claimId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogClaimClosed(processId, claimId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPayoutCreated(processId, claimId, payoutId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPolicy.sol[`++LogPayoutProcessed(processId, payoutId)++`]
 
 --
 
@@ -1234,7 +1234,7 @@ import "@etherisc/gif-contracts/contracts/modules/PoolController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IPool
@@ -1250,15 +1250,15 @@ import "@etherisc/gif-contracts/contracts/modules/PoolController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IPool
-* {xref-IPool-LogRiskpoolRegistered-uint256-address-address-uint256-uint256-}[`++LogRiskpoolRegistered(riskpoolId, wallet, erc20Token, collateralizationLevel, sumOfSumInsuredCap)++`]
-* {xref-IPool-LogRiskpoolRequiredCollateral-bytes32-uint256-uint256-}[`++LogRiskpoolRequiredCollateral(processId, sumInsured, collateral)++`]
-* {xref-IPool-LogRiskpoolCollateralizationFailed-uint256-bytes32-uint256-}[`++LogRiskpoolCollateralizationFailed(riskpoolId, processId, amount)++`]
-* {xref-IPool-LogRiskpoolCollateralizationSucceeded-uint256-bytes32-uint256-}[`++LogRiskpoolCollateralizationSucceeded(riskpoolId, processId, amount)++`]
-* {xref-IPool-LogRiskpoolCollateralReleased-uint256-bytes32-uint256-}[`++LogRiskpoolCollateralReleased(riskpoolId, processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPool.sol[`++LogRiskpoolRegistered(riskpoolId, wallet, erc20Token, collateralizationLevel, sumOfSumInsuredCap)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPool.sol[`++LogRiskpoolRequiredCollateral(processId, sumInsured, collateral)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPool.sol[`++LogRiskpoolCollateralizationFailed(riskpoolId, processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPool.sol[`++LogRiskpoolCollateralizationSucceeded(riskpoolId, processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IPool.sol[`++LogRiskpoolCollateralReleased(riskpoolId, processId, amount)++`]
 
 --
 
@@ -1407,7 +1407,7 @@ import "@etherisc/gif-contracts/contracts/modules/QueryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IQuery
@@ -1423,13 +1423,13 @@ import "@etherisc/gif-contracts/contracts/modules/QueryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IQuery
-* {xref-IQuery-LogOracleRequested-bytes32-uint256-uint256-}[`++LogOracleRequested(processId, requestId, responsibleOracleId)++`]
-* {xref-IQuery-LogOracleResponded-bytes32-uint256-address-bool-}[`++LogOracleResponded(processId, requestId, responder, success)++`]
-* {xref-IQuery-LogOracleCanceled-uint256-}[`++LogOracleCanceled(requestId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IQuery.sol[`++LogOracleRequested(processId, requestId, responsibleOracleId)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IQuery.sol[`++LogOracleResponded(processId, requestId, responder, success)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IQuery.sol[`++LogOracleCanceled(requestId)++`]
 
 --
 
@@ -1527,7 +1527,7 @@ import "@etherisc/gif-contracts/contracts/modules/RegistryController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IRegistry
@@ -1543,13 +1543,13 @@ import "@etherisc/gif-contracts/contracts/modules/RegistryController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IRegistry
-* {xref-IRegistry-LogContractRegistered-bytes32-bytes32-address-bool-}[`++LogContractRegistered(release, contractName, contractAddress, isNew)++`]
-* {xref-IRegistry-LogContractDeregistered-bytes32-bytes32-}[`++LogContractDeregistered(release, contractName)++`]
-* {xref-IRegistry-LogReleasePrepared-bytes32-}[`++LogReleasePrepared(release)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IRegistry.sol[`++LogContractRegistered(release, contractName, contractAddress, isNew)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IRegistry.sol[`++LogContractDeregistered(release, contractName)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/IRegistry.sol[`++LogReleasePrepared(release)++`]
 
 --
 
@@ -1715,11 +1715,11 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Pausable
-* {xref-Pausable-paused--}[`++paused()++`]
-* {xref-Pausable-_requireNotPaused--}[`++_requireNotPaused()++`]
-* {xref-Pausable-_requirePaused--}[`++_requirePaused()++`]
-* {xref-Pausable-_pause--}[`++_pause()++`]
-* {xref-Pausable-_unpause--}[`++_unpause()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-paused--[`++paused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_requireNotPaused--[`++_requireNotPaused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_requirePaused--[`++_requirePaused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_pause--[`++_pause()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_unpause--[`++_unpause()++`]
 
 [.contract-subindex-inherited]
 .CoreController
@@ -1729,7 +1729,7 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .ITreasury
@@ -1745,34 +1745,34 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Pausable
-* {xref-Pausable-Paused-address-}[`++Paused(account)++`]
-* {xref-Pausable-Unpaused-address-}[`++Unpaused(account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-Paused-address-[`++Paused(account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-Unpaused-address-[`++Unpaused(account)++`]
 
 [.contract-subindex-inherited]
 .CoreController
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .ITreasury
-* {xref-ITreasury-LogTreasurySuspended--}[`++LogTreasurySuspended()++`]
-* {xref-ITreasury-LogTreasuryResumed--}[`++LogTreasuryResumed()++`]
-* {xref-ITreasury-LogTreasuryProductTokenSet-uint256-uint256-address-}[`++LogTreasuryProductTokenSet(productId, riskpoolId, erc20Address)++`]
-* {xref-ITreasury-LogTreasuryInstanceWalletSet-address-}[`++LogTreasuryInstanceWalletSet(walletAddress)++`]
-* {xref-ITreasury-LogTreasuryRiskpoolWalletSet-uint256-address-}[`++LogTreasuryRiskpoolWalletSet(riskpoolId, walletAddress)++`]
-* {xref-ITreasury-LogTreasuryPremiumFeesSet-uint256-uint256-uint256-}[`++LogTreasuryPremiumFeesSet(productId, fixedFee, fractionalFee)++`]
-* {xref-ITreasury-LogTreasuryCapitalFeesSet-uint256-uint256-uint256-}[`++LogTreasuryCapitalFeesSet(riskpoolId, fixedFee, fractionalFee)++`]
-* {xref-ITreasury-LogTreasuryPremiumTransferred-address-address-uint256-}[`++LogTreasuryPremiumTransferred(from, riskpoolWalletAddress, amount)++`]
-* {xref-ITreasury-LogTreasuryPayoutTransferred-address-address-uint256-}[`++LogTreasuryPayoutTransferred(riskpoolWalletAddress, to, amount)++`]
-* {xref-ITreasury-LogTreasuryCapitalTransferred-address-address-uint256-}[`++LogTreasuryCapitalTransferred(from, riskpoolWalletAddress, amount)++`]
-* {xref-ITreasury-LogTreasuryFeesTransferred-address-address-uint256-}[`++LogTreasuryFeesTransferred(from, instanceWalletAddress, amount)++`]
-* {xref-ITreasury-LogTreasuryWithdrawalTransferred-address-address-uint256-}[`++LogTreasuryWithdrawalTransferred(riskpoolWalletAddress, to, amount)++`]
-* {xref-ITreasury-LogTreasuryPremiumProcessed-bytes32-uint256-}[`++LogTreasuryPremiumProcessed(processId, amount)++`]
-* {xref-ITreasury-LogTreasuryPayoutProcessed-uint256-address-uint256-}[`++LogTreasuryPayoutProcessed(riskpoolId, to, amount)++`]
-* {xref-ITreasury-LogTreasuryCapitalProcessed-uint256-uint256-uint256-}[`++LogTreasuryCapitalProcessed(riskpoolId, bundleId, amount)++`]
-* {xref-ITreasury-LogTreasuryWithdrawalProcessed-uint256-uint256-uint256-}[`++LogTreasuryWithdrawalProcessed(riskpoolId, bundleId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasurySuspended()++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryResumed()++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryProductTokenSet(productId, riskpoolId, erc20Address)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryInstanceWalletSet(walletAddress)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryRiskpoolWalletSet(riskpoolId, walletAddress)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryPremiumFeesSet(productId, fixedFee, fractionalFee)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryCapitalFeesSet(riskpoolId, fixedFee, fractionalFee)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryPremiumTransferred(from, riskpoolWalletAddress, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryPayoutTransferred(riskpoolWalletAddress, to, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryCapitalTransferred(from, riskpoolWalletAddress, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryFeesTransferred(from, instanceWalletAddress, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryWithdrawalTransferred(riskpoolWalletAddress, to, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryPremiumProcessed(processId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryPayoutProcessed(riskpoolId, to, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryCapitalProcessed(riskpoolId, bundleId, amount)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/modules/ITreasury.sol[`++LogTreasuryWithdrawalProcessed(riskpoolId, bundleId, amount)++`]
 
 --
 

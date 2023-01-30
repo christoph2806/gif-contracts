@@ -33,7 +33,11 @@ import "@etherisc/gif-contracts/{{__item_context.file.absolutePath}}";
 .{{contract.name}}
 {{/unless}}
 {{#each functions}}
+{{#if isInternal}}
 * {xref-{{anchor~}} }[`++{{name}}({{names params}})++`]
+{{else}}
+* {{externalLink~}} [`++{{name}}({{names params}})++`]
+{{/if}}
 {{/each}}
 
 {{/each}}
@@ -50,7 +54,11 @@ import "@etherisc/gif-contracts/{{__item_context.file.absolutePath}}";
 .{{name}}
 {{/unless}}
 {{#each events}}
+{{#if isInternal}}
 * {xref-{{anchor~}} }[`++{{name}}({{names params}})++`]
+{{else}}
+* {{externalLink~}} [`++{{name}}({{names params}})++`]
+{{/if}}
 {{/each}}
 
 {{/each}}

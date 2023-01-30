@@ -66,7 +66,7 @@ import "@etherisc/gif-contracts/contracts/shared/CoreController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-_disableInitializers--}[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 --
 
@@ -76,7 +76,7 @@ import "@etherisc/gif-contracts/contracts/shared/CoreController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* {xref-Initializable-Initialized-uint8-}[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 --
 
@@ -137,26 +137,26 @@ import "@etherisc/gif-contracts/contracts/shared/CoreProxy.sol";
 
 [.contract-subindex-inherited]
 .ERC1967Proxy
-* {xref-ERC1967Proxy-_implementation--}[`++_implementation()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Proxy-_implementation--[`++_implementation()++`]
 
 [.contract-subindex-inherited]
 .ERC1967Upgrade
-* {xref-ERC1967Upgrade-_getImplementation--}[`++_getImplementation()++`]
-* {xref-ERC1967Upgrade-_upgradeTo-address-}[`++_upgradeTo(newImplementation)++`]
-* {xref-ERC1967Upgrade-_upgradeToAndCall-address-bytes-bool-}[`++_upgradeToAndCall(newImplementation, data, forceCall)++`]
-* {xref-ERC1967Upgrade-_upgradeToAndCallUUPS-address-bytes-bool-}[`++_upgradeToAndCallUUPS(newImplementation, data, forceCall)++`]
-* {xref-ERC1967Upgrade-_getAdmin--}[`++_getAdmin()++`]
-* {xref-ERC1967Upgrade-_changeAdmin-address-}[`++_changeAdmin(newAdmin)++`]
-* {xref-ERC1967Upgrade-_getBeacon--}[`++_getBeacon()++`]
-* {xref-ERC1967Upgrade-_upgradeBeaconToAndCall-address-bytes-bool-}[`++_upgradeBeaconToAndCall(newBeacon, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_getImplementation--[`++_getImplementation()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_upgradeTo-address-[`++_upgradeTo(newImplementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_upgradeToAndCall-address-bytes-bool-[`++_upgradeToAndCall(newImplementation, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_upgradeToAndCallUUPS-address-bytes-bool-[`++_upgradeToAndCallUUPS(newImplementation, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_getAdmin--[`++_getAdmin()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_changeAdmin-address-[`++_changeAdmin(newAdmin)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_getBeacon--[`++_getBeacon()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-_upgradeBeaconToAndCall-address-bytes-bool-[`++_upgradeBeaconToAndCall(newBeacon, data, forceCall)++`]
 
 [.contract-subindex-inherited]
 .Proxy
-* {xref-Proxy-_delegate-address-}[`++_delegate(implementation)++`]
-* {xref-Proxy-_fallback--}[`++_fallback()++`]
-* {xref-Proxy-fallback--}[`++fallback()++`]
-* {xref-Proxy-receive--}[`++receive()++`]
-* {xref-Proxy-_beforeFallback--}[`++_beforeFallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_delegate-address-[`++_delegate(implementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_fallback--[`++_fallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-fallback--[`++fallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-receive--[`++receive()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_beforeFallback--[`++_beforeFallback()++`]
 
 [.contract-subindex-inherited]
 .ICoreProxy
@@ -172,16 +172,16 @@ import "@etherisc/gif-contracts/contracts/shared/CoreProxy.sol";
 
 [.contract-subindex-inherited]
 .ERC1967Upgrade
-* {xref-ERC1967Upgrade-Upgraded-address-}[`++Upgraded(implementation)++`]
-* {xref-ERC1967Upgrade-AdminChanged-address-address-}[`++AdminChanged(previousAdmin, newAdmin)++`]
-* {xref-ERC1967Upgrade-BeaconUpgraded-address-}[`++BeaconUpgraded(beacon)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-Upgraded-address-[`++Upgraded(implementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-AdminChanged-address-address-[`++AdminChanged(previousAdmin, newAdmin)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/ERC1967#ERC1967Upgrade-BeaconUpgraded-address-[`++BeaconUpgraded(beacon)++`]
 
 [.contract-subindex-inherited]
 .Proxy
 
 [.contract-subindex-inherited]
 .ICoreProxy
-* {xref-ICoreProxy-LogCoreContractUpgraded-address-address-}[`++LogCoreContractUpgraded(oldImplementation, newImplemntation)++`]
+* https://github.com/etherisc/gif-interface/blob/develop/contracts/shared/ICoreProxy.sol[`++LogCoreContractUpgraded(oldImplementation, newImplemntation)++`]
 
 --
 
