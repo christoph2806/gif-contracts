@@ -23,7 +23,7 @@ module.exports.externalLink = function ({ item, contract }) {
     // TODO: exchange this against links to the actual docs
     const links = {
         '@etherisc/gif-interface': 'https://github.com/etherisc/gif-interface/blob/develop',
-        '@openzeppelin': 'https://docs.openzeppelin.com/contracts/4.x/api'
+        '@openzeppelin': 'https://docs.openzeppelin.com/contracts/3.x/api'
     };
 
     const path = item.__item_context.file.absolutePath;

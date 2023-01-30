@@ -123,24 +123,24 @@ import "@etherisc/gif-contracts/contracts/test/TestCoin.sol";
 
 [.contract-subindex-inherited]
 .ERC20
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-name--[`++name()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-symbol--[`++symbol()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-decimals--[`++decimals()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-totalSupply--[`++totalSupply()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-balanceOf-address-[`++balanceOf(account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-transfer-address-uint256-[`++transfer(to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-allowance-address-address-[`++allowance(owner, spender)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-approve-address-uint256-[`++approve(spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-transferFrom-address-address-uint256-[`++transferFrom(from, to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-increaseAllowance-address-uint256-[`++increaseAllowance(spender, addedValue)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-decreaseAllowance-address-uint256-[`++decreaseAllowance(spender, subtractedValue)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_transfer-address-address-uint256-[`++_transfer(from, to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_mint-address-uint256-[`++_mint(account, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_burn-address-uint256-[`++_burn(account, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_approve-address-address-uint256-[`++_approve(owner, spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_spendAllowance-address-address-uint256-[`++_spendAllowance(owner, spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_beforeTokenTransfer-address-address-uint256-[`++_beforeTokenTransfer(from, to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_afterTokenTransfer-address-address-uint256-[`++_afterTokenTransfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-name--[`++name()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-symbol--[`++symbol()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-decimals--[`++decimals()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-totalSupply--[`++totalSupply()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-balanceOf-address-[`++balanceOf(account)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-transfer-address-uint256-[`++transfer(to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-allowance-address-address-[`++allowance(owner, spender)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-approve-address-uint256-[`++approve(spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-transferFrom-address-address-uint256-[`++transferFrom(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-increaseAllowance-address-uint256-[`++increaseAllowance(spender, addedValue)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-decreaseAllowance-address-uint256-[`++decreaseAllowance(spender, subtractedValue)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_transfer-address-address-uint256-[`++_transfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_mint-address-uint256-[`++_mint(account, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_burn-address-uint256-[`++_burn(account, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_approve-address-address-uint256-[`++_approve(owner, spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_spendAllowance-address-address-uint256-[`++_spendAllowance(owner, spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_beforeTokenTransfer-address-address-uint256-[`++_beforeTokenTransfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_afterTokenTransfer-address-address-uint256-[`++_afterTokenTransfer(from, to, amount)++`]
 
 [.contract-subindex-inherited]
 .IERC20Metadata
@@ -162,8 +162,8 @@ import "@etherisc/gif-contracts/contracts/test/TestCoin.sol";
 
 [.contract-subindex-inherited]
 .IERC20
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#IERC20-Transfer-address-address-uint256-[`++Transfer(from, to, value)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#IERC20-Approval-address-address-uint256-[`++Approval(owner, spender, value)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#IERC20-Transfer-address-address-uint256-[`++Transfer(from, to, value)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#IERC20-Approval-address-address-uint256-[`++Approval(owner, spender, value)++`]
 
 --
 
@@ -194,23 +194,23 @@ import "@etherisc/gif-contracts/contracts/test/TestCoinAlternativeImplementation
 
 [.contract-subindex-inherited]
 .ERC20
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-name--[`++name()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-symbol--[`++symbol()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-decimals--[`++decimals()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-totalSupply--[`++totalSupply()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-balanceOf-address-[`++balanceOf(account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-transfer-address-uint256-[`++transfer(to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-allowance-address-address-[`++allowance(owner, spender)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-approve-address-uint256-[`++approve(spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-increaseAllowance-address-uint256-[`++increaseAllowance(spender, addedValue)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-decreaseAllowance-address-uint256-[`++decreaseAllowance(spender, subtractedValue)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_transfer-address-address-uint256-[`++_transfer(from, to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_mint-address-uint256-[`++_mint(account, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_burn-address-uint256-[`++_burn(account, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_approve-address-address-uint256-[`++_approve(owner, spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_spendAllowance-address-address-uint256-[`++_spendAllowance(owner, spender, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_beforeTokenTransfer-address-address-uint256-[`++_beforeTokenTransfer(from, to, amount)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#ERC20-_afterTokenTransfer-address-address-uint256-[`++_afterTokenTransfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-name--[`++name()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-symbol--[`++symbol()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-decimals--[`++decimals()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-totalSupply--[`++totalSupply()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-balanceOf-address-[`++balanceOf(account)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-transfer-address-uint256-[`++transfer(to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-allowance-address-address-[`++allowance(owner, spender)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-approve-address-uint256-[`++approve(spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-increaseAllowance-address-uint256-[`++increaseAllowance(spender, addedValue)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-decreaseAllowance-address-uint256-[`++decreaseAllowance(spender, subtractedValue)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_transfer-address-address-uint256-[`++_transfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_mint-address-uint256-[`++_mint(account, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_burn-address-uint256-[`++_burn(account, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_approve-address-address-uint256-[`++_approve(owner, spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_spendAllowance-address-address-uint256-[`++_spendAllowance(owner, spender, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_beforeTokenTransfer-address-address-uint256-[`++_beforeTokenTransfer(from, to, amount)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#ERC20-_afterTokenTransfer-address-address-uint256-[`++_afterTokenTransfer(from, to, amount)++`]
 
 [.contract-subindex-inherited]
 .IERC20Metadata
@@ -232,8 +232,8 @@ import "@etherisc/gif-contracts/contracts/test/TestCoinAlternativeImplementation
 
 [.contract-subindex-inherited]
 .IERC20
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#IERC20-Transfer-address-address-uint256-[`++Transfer(from, to, value)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/token/ERC20#IERC20-Approval-address-address-uint256-[`++Approval(owner, spender, value)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#IERC20-Transfer-address-address-uint256-[`++Transfer(from, to, value)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/token/ERC20#IERC20-Approval-address-address-uint256-[`++Approval(owner, spender, value)++`]
 
 --
 
@@ -328,11 +328,11 @@ import "@etherisc/gif-contracts/contracts/test/TestCompromisedProduct.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-owner--[`++owner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-owner--[`++owner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
 
 [.contract-subindex-inherited]
 .IProduct
@@ -348,7 +348,7 @@ import "@etherisc/gif-contracts/contracts/test/TestCompromisedProduct.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
 
 [.contract-subindex-inherited]
 .IProduct
@@ -546,11 +546,11 @@ import "@etherisc/gif-contracts/contracts/test/TestOracle.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-owner--[`++owner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-owner--[`++owner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -575,7 +575,7 @@ import "@etherisc/gif-contracts/contracts/test/TestOracle.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -759,11 +759,11 @@ import "@etherisc/gif-contracts/contracts/test/TestProduct.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-owner--[`++owner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-owner--[`++owner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -790,7 +790,7 @@ import "@etherisc/gif-contracts/contracts/test/TestProduct.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -1009,7 +1009,7 @@ import "@etherisc/gif-contracts/contracts/test/TestRegistryControllerUpdated.sol
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IRegistry
@@ -1028,7 +1028,7 @@ import "@etherisc/gif-contracts/contracts/test/TestRegistryControllerUpdated.sol
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IRegistry
@@ -1141,11 +1141,11 @@ import "@etherisc/gif-contracts/contracts/test/TestRiskpool.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-owner--[`++owner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-owner--[`++owner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -1175,7 +1175,7 @@ import "@etherisc/gif-contracts/contracts/test/TestRiskpool.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
+* https://docs.openzeppelin.com/contracts/3.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
