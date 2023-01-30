@@ -185,7 +185,7 @@ import "@etherisc/gif-contracts/contracts/services/ComponentOwnerService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IComponentOwnerService
@@ -201,7 +201,7 @@ import "@etherisc/gif-contracts/contracts/services/ComponentOwnerService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IComponentOwnerService
@@ -317,11 +317,11 @@ import "@etherisc/gif-contracts/contracts/services/InstanceOperatorService.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-owner--[`++owner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_checkOwner--[`++_checkOwner()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-renounceOwnership--[`++renounceOwnership()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-owner--[`++owner()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-_checkOwner--[`++_checkOwner()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-renounceOwnership--[`++renounceOwnership()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-transferOwnership-address-[`++transferOwnership(newOwner)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-_transferOwnership-address-[`++_transferOwnership(newOwner)++`]
 
 [.contract-subindex-inherited]
 .CoreController
@@ -331,7 +331,7 @@ import "@etherisc/gif-contracts/contracts/services/InstanceOperatorService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IInstanceOperatorService
@@ -344,14 +344,14 @@ import "@etherisc/gif-contracts/contracts/services/InstanceOperatorService.sol";
 
 [.contract-subindex-inherited]
 .Ownable
-* https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access?#Ownable-OwnershipTransferred-address-address-[`++OwnershipTransferred(previousOwner, newOwner)++`]
 
 [.contract-subindex-inherited]
 .CoreController
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IInstanceOperatorService
@@ -612,7 +612,7 @@ import "@etherisc/gif-contracts/contracts/services/InstanceService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IInstanceService
@@ -628,7 +628,7 @@ import "@etherisc/gif-contracts/contracts/services/InstanceService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IInstanceService
@@ -889,7 +889,7 @@ import "@etherisc/gif-contracts/contracts/services/OracleService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IOracleService
@@ -905,7 +905,7 @@ import "@etherisc/gif-contracts/contracts/services/OracleService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IOracleService
@@ -1037,7 +1037,7 @@ import "@etherisc/gif-contracts/contracts/services/RiskpoolService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IRiskpoolService
@@ -1053,7 +1053,7 @@ import "@etherisc/gif-contracts/contracts/services/RiskpoolService.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/utils#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IRiskpoolService
