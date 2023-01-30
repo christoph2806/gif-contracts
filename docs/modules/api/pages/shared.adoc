@@ -66,7 +66,7 @@ import "@etherisc/gif-contracts/contracts/shared/CoreController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 --
 
@@ -76,7 +76,7 @@ import "@etherisc/gif-contracts/contracts/shared/CoreController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 --
 
@@ -137,26 +137,26 @@ import "@etherisc/gif-contracts/contracts/shared/CoreProxy.sol";
 
 [.contract-subindex-inherited]
 .ERC1967Proxy
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Proxy-_implementation--[`++_implementation()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Proxy-_implementation--[`++_implementation()++`]
 
 [.contract-subindex-inherited]
 .ERC1967Upgrade
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_getImplementation--[`++_getImplementation()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_upgradeTo-address-[`++_upgradeTo(newImplementation)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_upgradeToAndCall-address-bytes-bool-[`++_upgradeToAndCall(newImplementation, data, forceCall)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_upgradeToAndCallUUPS-address-bytes-bool-[`++_upgradeToAndCallUUPS(newImplementation, data, forceCall)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_getAdmin--[`++_getAdmin()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_changeAdmin-address-[`++_changeAdmin(newAdmin)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_getBeacon--[`++_getBeacon()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-_upgradeBeaconToAndCall-address-bytes-bool-[`++_upgradeBeaconToAndCall(newBeacon, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_getImplementation--[`++_getImplementation()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_upgradeTo-address-[`++_upgradeTo(newImplementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_upgradeToAndCall-address-bytes-bool-[`++_upgradeToAndCall(newImplementation, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_upgradeToAndCallUUPS-address-bytes-bool-[`++_upgradeToAndCallUUPS(newImplementation, data, forceCall)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_getAdmin--[`++_getAdmin()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_changeAdmin-address-[`++_changeAdmin(newAdmin)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_getBeacon--[`++_getBeacon()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-_upgradeBeaconToAndCall-address-bytes-bool-[`++_upgradeBeaconToAndCall(newBeacon, data, forceCall)++`]
 
 [.contract-subindex-inherited]
 .Proxy
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy?#Proxy-_delegate-address-[`++_delegate(implementation)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy?#Proxy-_fallback--[`++_fallback()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy?#Proxy-fallback--[`++fallback()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy?#Proxy-receive--[`++receive()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy?#Proxy-_beforeFallback--[`++_beforeFallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_delegate-address-[`++_delegate(implementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_fallback--[`++_fallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-fallback--[`++fallback()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-receive--[`++receive()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Proxy-_beforeFallback--[`++_beforeFallback()++`]
 
 [.contract-subindex-inherited]
 .ICoreProxy
@@ -172,9 +172,9 @@ import "@etherisc/gif-contracts/contracts/shared/CoreProxy.sol";
 
 [.contract-subindex-inherited]
 .ERC1967Upgrade
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-Upgraded-address-[`++Upgraded(implementation)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-AdminChanged-address-address-[`++AdminChanged(previousAdmin, newAdmin)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/ERC1967?#ERC1967Upgrade-BeaconUpgraded-address-[`++BeaconUpgraded(beacon)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-Upgraded-address-[`++Upgraded(implementation)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-AdminChanged-address-address-[`++AdminChanged(previousAdmin, newAdmin)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#ERC1967Upgrade-BeaconUpgraded-address-[`++BeaconUpgraded(beacon)++`]
 
 [.contract-subindex-inherited]
 .Proxy

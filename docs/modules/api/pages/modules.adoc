@@ -261,23 +261,23 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .AccessControlEnumerable
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControlEnumerable-supportsInterface-bytes4-[`++supportsInterface(interfaceId)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControlEnumerable-getRoleMember-bytes32-uint256-[`++getRoleMember(role, index)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControlEnumerable-getRoleMemberCount-bytes32-[`++getRoleMemberCount(role)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControlEnumerable-_grantRole-bytes32-address-[`++_grantRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControlEnumerable-_revokeRole-bytes32-address-[`++_revokeRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-supportsInterface-bytes4-[`++supportsInterface(interfaceId)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-getRoleMember-bytes32-uint256-[`++getRoleMember(role, index)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-getRoleMemberCount-bytes32-[`++getRoleMemberCount(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-_grantRole-bytes32-address-[`++_grantRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControlEnumerable-_revokeRole-bytes32-address-[`++_revokeRole(role, account)++`]
 
 [.contract-subindex-inherited]
 .AccessControl
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-hasRole-bytes32-address-[`++hasRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-_checkRole-bytes32-[`++_checkRole(role)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-_checkRole-bytes32-address-[`++_checkRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-getRoleAdmin-bytes32-[`++getRoleAdmin(role)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-grantRole-bytes32-address-[`++grantRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-revokeRole-bytes32-address-[`++revokeRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-renounceRole-bytes32-address-[`++renounceRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-_setupRole-bytes32-address-[`++_setupRole(role, account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#AccessControl-_setRoleAdmin-bytes32-bytes32-[`++_setRoleAdmin(role, adminRole)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-hasRole-bytes32-address-[`++hasRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_checkRole-bytes32-[`++_checkRole(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_checkRole-bytes32-address-[`++_checkRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-getRoleAdmin-bytes32-[`++getRoleAdmin(role)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-grantRole-bytes32-address-[`++grantRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-revokeRole-bytes32-address-[`++revokeRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-renounceRole-bytes32-address-[`++renounceRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_setupRole-bytes32-address-[`++_setupRole(role, account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#AccessControl-_setRoleAdmin-bytes32-bytes32-[`++_setRoleAdmin(role, adminRole)++`]
 
 [.contract-subindex-inherited]
 .ERC165
@@ -298,7 +298,7 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IAccess
@@ -326,16 +326,16 @@ import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 
 [.contract-subindex-inherited]
 .IAccessControl
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#IAccessControl-RoleAdminChanged-bytes32-bytes32-bytes32-[`++RoleAdminChanged(role, previousAdminRole, newAdminRole)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#IAccessControl-RoleGranted-bytes32-address-address-[`++RoleGranted(role, account, sender)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/access?#IAccessControl-RoleRevoked-bytes32-address-address-[`++RoleRevoked(role, account, sender)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleAdminChanged-bytes32-bytes32-bytes32-[`++RoleAdminChanged(role, previousAdminRole, newAdminRole)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleGranted-bytes32-address-address-[`++RoleGranted(role, account, sender)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/access#IAccessControl-RoleRevoked-bytes32-address-address-[`++RoleRevoked(role, account, sender)++`]
 
 [.contract-subindex-inherited]
 .CoreController
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IAccess
@@ -477,7 +477,7 @@ import "@etherisc/gif-contracts/contracts/modules/BundleController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IBundle
@@ -493,7 +493,7 @@ import "@etherisc/gif-contracts/contracts/modules/BundleController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IBundle
@@ -709,7 +709,7 @@ import "@etherisc/gif-contracts/contracts/modules/ComponentController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -725,7 +725,7 @@ import "@etherisc/gif-contracts/contracts/modules/ComponentController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IComponentEvents
@@ -895,7 +895,7 @@ import "@etherisc/gif-contracts/contracts/modules/LicenseController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .ILicense
@@ -911,7 +911,7 @@ import "@etherisc/gif-contracts/contracts/modules/LicenseController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .ILicense
@@ -1012,7 +1012,7 @@ import "@etherisc/gif-contracts/contracts/modules/PolicyController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IPolicy
@@ -1028,7 +1028,7 @@ import "@etherisc/gif-contracts/contracts/modules/PolicyController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IPolicy
@@ -1234,7 +1234,7 @@ import "@etherisc/gif-contracts/contracts/modules/PoolController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IPool
@@ -1250,7 +1250,7 @@ import "@etherisc/gif-contracts/contracts/modules/PoolController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IPool
@@ -1407,7 +1407,7 @@ import "@etherisc/gif-contracts/contracts/modules/QueryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IQuery
@@ -1423,7 +1423,7 @@ import "@etherisc/gif-contracts/contracts/modules/QueryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IQuery
@@ -1527,7 +1527,7 @@ import "@etherisc/gif-contracts/contracts/modules/RegistryController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .IRegistry
@@ -1543,7 +1543,7 @@ import "@etherisc/gif-contracts/contracts/modules/RegistryController.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .IRegistry
@@ -1715,11 +1715,11 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Pausable
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-paused--[`++paused()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-_requireNotPaused--[`++_requireNotPaused()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-_requirePaused--[`++_requirePaused()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-_pause--[`++_pause()++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-_unpause--[`++_unpause()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-paused--[`++paused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_requireNotPaused--[`++_requireNotPaused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_requirePaused--[`++_requirePaused()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_pause--[`++_pause()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-_unpause--[`++_unpause()++`]
 
 [.contract-subindex-inherited]
 .CoreController
@@ -1729,7 +1729,7 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-_disableInitializers--[`++_disableInitializers()++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-_disableInitializers--[`++_disableInitializers()++`]
 
 [.contract-subindex-inherited]
 .ITreasury
@@ -1745,15 +1745,15 @@ import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 
 [.contract-subindex-inherited]
 .Pausable
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-Paused-address-[`++Paused(account)++`]
-* https://docs.openzeppelin.com/contracts/4.x/api/security?#Pausable-Unpaused-address-[`++Unpaused(account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-Paused-address-[`++Paused(account)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable-Unpaused-address-[`++Unpaused(account)++`]
 
 [.contract-subindex-inherited]
 .CoreController
 
 [.contract-subindex-inherited]
 .Initializable
-* https://docs.openzeppelin.com/contracts/4.x/api/proxy/utils?#Initializable-Initialized-uint8-[`++Initialized(version)++`]
+* https://docs.openzeppelin.com/contracts/4.x/api/proxy#Initializable-Initialized-uint8-[`++Initialized(version)++`]
 
 [.contract-subindex-inherited]
 .ITreasury

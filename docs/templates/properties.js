@@ -29,7 +29,7 @@ module.exports.externalLink = function ({ item, contract }) {
     for (const [key, value] of Object.entries(links)) {
         if (path.startsWith(key)) {
             if (key === '@openzeppelin') {
-                const s = /contracts\/(.*)\/.*$/;
+                const s = /contracts\/([^\/]+)\/.*$/;
                 const mod = path.match(s)[1];
                 console.log(path, mod)
                 return value + '/' + mod + '#' + anchor;
