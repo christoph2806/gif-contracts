@@ -109,11 +109,11 @@ NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/
 
 [.contract]
 [[TestCoin]]
-=== `++TestCoin++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestCoin.sol[{github-icon},role=heading-link]
+=== `++TestCoin++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestCoin.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestCoin.sol";
+import "@etherisc/gif-contracts/contracts/test/TestCoin.sol";
 ```
 
 [.contract-index]
@@ -179,11 +179,11 @@ import "@openzeppelin/contracts/test/TestCoin.sol";
 
 [.contract]
 [[TestCoinAlternativeImplementation]]
-=== `++TestCoinAlternativeImplementation++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestCoinAlternativeImplementation.sol[{github-icon},role=heading-link]
+=== `++TestCoinAlternativeImplementation++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestCoinAlternativeImplementation.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestCoinAlternativeImplementation.sol";
+import "@etherisc/gif-contracts/contracts/test/TestCoinAlternativeImplementation.sol";
 ```
 
 [.contract-index]
@@ -280,11 +280,11 @@ import "@openzeppelin/contracts/test/TestCoinAlternativeImplementation.sol";
 
 [.contract]
 [[TestCompromisedProduct]]
-=== `++TestCompromisedProduct++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestCompromisedProduct.sol[{github-icon},role=heading-link]
+=== `++TestCompromisedProduct++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestCompromisedProduct.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestCompromisedProduct.sol";
+import "@etherisc/gif-contracts/contracts/test/TestCompromisedProduct.sol";
 ```
 
 [.contract-index]
@@ -491,11 +491,11 @@ import "@openzeppelin/contracts/test/TestCompromisedProduct.sol";
 
 [.contract]
 [[TestOracle]]
-=== `++TestOracle++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestOracle.sol[{github-icon},role=heading-link]
+=== `++TestOracle++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestOracle.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestOracle.sol";
+import "@etherisc/gif-contracts/contracts/test/TestOracle.sol";
 ```
 
 [.contract-index]
@@ -655,11 +655,11 @@ import "@openzeppelin/contracts/test/TestOracle.sol";
 
 [.contract]
 [[TestProduct]]
-=== `++TestProduct++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestProduct.sol[{github-icon},role=heading-link]
+=== `++TestProduct++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestProduct.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestProduct.sol";
+import "@etherisc/gif-contracts/contracts/test/TestProduct.sol";
 ```
 
 [.contract-index]
@@ -937,11 +937,11 @@ import "@openzeppelin/contracts/test/TestProduct.sol";
 
 [.contract]
 [[TestRegistryCompromisedController]]
-=== `++TestRegistryCompromisedController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestRegistryCompromisedController.sol[{github-icon},role=heading-link]
+=== `++TestRegistryCompromisedController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestRegistryCompromisedController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestRegistryCompromisedController.sol";
+import "@etherisc/gif-contracts/contracts/test/TestRegistryCompromisedController.sol";
 ```
 
 [.contract-index]
@@ -968,11 +968,11 @@ import "@openzeppelin/contracts/test/TestRegistryCompromisedController.sol";
 
 [.contract]
 [[TestRegistryControllerUpdated]]
-=== `++TestRegistryControllerUpdated++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestRegistryControllerUpdated.sol[{github-icon},role=heading-link]
+=== `++TestRegistryControllerUpdated++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestRegistryControllerUpdated.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestRegistryControllerUpdated.sol";
+import "@etherisc/gif-contracts/contracts/test/TestRegistryControllerUpdated.sol";
 ```
 
 [.contract-index]
@@ -1056,11 +1056,11 @@ import "@openzeppelin/contracts/test/TestRegistryControllerUpdated.sol";
 
 [.contract]
 [[TestRiskpool]]
-=== `++TestRiskpool++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestRiskpool.sol[{github-icon},role=heading-link]
+=== `++TestRiskpool++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestRiskpool.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestRiskpool.sol";
+import "@etherisc/gif-contracts/contracts/test/TestRiskpool.sol";
 ```
 
 [.contract-index]
@@ -1223,11 +1223,11 @@ import "@openzeppelin/contracts/test/TestRiskpool.sol";
 
 [.contract]
 [[TestTransferFrom]]
-=== `++TestTransferFrom++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/test/TestTransferFrom.sol[{github-icon},role=heading-link]
+=== `++TestTransferFrom++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/test/TestTransferFrom.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/test/TestTransferFrom.sol";
+import "@etherisc/gif-contracts/contracts/test/TestTransferFrom.sol";
 ```
 
 [.contract-index]

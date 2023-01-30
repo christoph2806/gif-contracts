@@ -152,11 +152,11 @@ NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/
 
 [.contract]
 [[ComponentOwnerService]]
-=== `++ComponentOwnerService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/ComponentOwnerService.sol[{github-icon},role=heading-link]
+=== `++ComponentOwnerService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/ComponentOwnerService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/ComponentOwnerService.sol";
+import "@etherisc/gif-contracts/contracts/services/ComponentOwnerService.sol";
 ```
 
 [.contract-index]
@@ -273,11 +273,11 @@ import "@openzeppelin/contracts/services/ComponentOwnerService.sol";
 
 [.contract]
 [[InstanceOperatorService]]
-=== `++InstanceOperatorService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/InstanceOperatorService.sol[{github-icon},role=heading-link]
+=== `++InstanceOperatorService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/InstanceOperatorService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/InstanceOperatorService.sol";
+import "@etherisc/gif-contracts/contracts/services/InstanceOperatorService.sol";
 ```
 
 [.contract-index]
@@ -536,11 +536,11 @@ import "@openzeppelin/contracts/services/InstanceOperatorService.sol";
 
 [.contract]
 [[InstanceService]]
-=== `++InstanceService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/InstanceService.sol[{github-icon},role=heading-link]
+=== `++InstanceService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/InstanceService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/InstanceService.sol";
+import "@etherisc/gif-contracts/contracts/services/InstanceService.sol";
 ```
 
 [.contract-index]
@@ -868,11 +868,11 @@ import "@openzeppelin/contracts/services/InstanceService.sol";
 
 [.contract]
 [[OracleService]]
-=== `++OracleService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/OracleService.sol[{github-icon},role=heading-link]
+=== `++OracleService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/OracleService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/OracleService.sol";
+import "@etherisc/gif-contracts/contracts/services/OracleService.sol";
 ```
 
 [.contract-index]
@@ -928,11 +928,11 @@ import "@openzeppelin/contracts/services/OracleService.sol";
 
 [.contract]
 [[ProductService]]
-=== `++ProductService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/ProductService.sol[{github-icon},role=heading-link]
+=== `++ProductService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/ProductService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/ProductService.sol";
+import "@etherisc/gif-contracts/contracts/services/ProductService.sol";
 ```
 
 [.contract-index]
@@ -995,11 +995,11 @@ https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.6/contrac
 
 [.contract]
 [[RiskpoolService]]
-=== `++RiskpoolService++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/services/RiskpoolService.sol[{github-icon},role=heading-link]
+=== `++RiskpoolService++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/services/RiskpoolService.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/services/RiskpoolService.sol";
+import "@etherisc/gif-contracts/contracts/services/RiskpoolService.sol";
 ```
 
 [.contract-index]

@@ -235,11 +235,11 @@ NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/
 
 [.contract]
 [[AccessController]]
-=== `++AccessController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/AccessController.sol[{github-icon},role=heading-link]
+=== `++AccessController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/AccessController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/AccessController.sol";
+import "@etherisc/gif-contracts/contracts/modules/AccessController.sol";
 ```
 
 [.contract-index]
@@ -425,11 +425,11 @@ import "@openzeppelin/contracts/modules/AccessController.sol";
 
 [.contract]
 [[BundleController]]
-=== `++BundleController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/BundleController.sol[{github-icon},role=heading-link]
+=== `++BundleController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/BundleController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/BundleController.sol";
+import "@etherisc/gif-contracts/contracts/modules/BundleController.sol";
 ```
 
 [.contract-index]
@@ -653,11 +653,11 @@ import "@openzeppelin/contracts/modules/BundleController.sol";
 
 [.contract]
 [[ComponentController]]
-=== `++ComponentController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/ComponentController.sol[{github-icon},role=heading-link]
+=== `++ComponentController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/ComponentController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/ComponentController.sol";
+import "@etherisc/gif-contracts/contracts/modules/ComponentController.sol";
 ```
 
 [.contract-index]
@@ -872,11 +872,11 @@ import "@openzeppelin/contracts/modules/ComponentController.sol";
 
 [.contract]
 [[LicenseController]]
-=== `++LicenseController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/LicenseController.sol[{github-icon},role=heading-link]
+=== `++LicenseController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/LicenseController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/LicenseController.sol";
+import "@etherisc/gif-contracts/contracts/modules/LicenseController.sol";
 ```
 
 [.contract-index]
@@ -968,11 +968,11 @@ import "@openzeppelin/contracts/modules/LicenseController.sol";
 
 [.contract]
 [[PolicyController]]
-=== `++PolicyController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/PolicyController.sol[{github-icon},role=heading-link]
+=== `++PolicyController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/PolicyController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/PolicyController.sol";
+import "@etherisc/gif-contracts/contracts/modules/PolicyController.sol";
 ```
 
 [.contract-index]
@@ -1185,11 +1185,11 @@ import "@openzeppelin/contracts/modules/PolicyController.sol";
 
 [.contract]
 [[PoolController]]
-=== `++PoolController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/PoolController.sol[{github-icon},role=heading-link]
+=== `++PoolController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/PoolController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/PoolController.sol";
+import "@etherisc/gif-contracts/contracts/modules/PoolController.sol";
 ```
 
 [.contract-index]
@@ -1374,11 +1374,11 @@ import "@openzeppelin/contracts/modules/PoolController.sol";
 
 [.contract]
 [[QueryModule]]
-=== `++QueryModule++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/QueryModule.sol[{github-icon},role=heading-link]
+=== `++QueryModule++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/QueryModule.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/QueryModule.sol";
+import "@etherisc/gif-contracts/contracts/modules/QueryModule.sol";
 ```
 
 [.contract-index]
@@ -1492,11 +1492,11 @@ import "@openzeppelin/contracts/modules/QueryModule.sol";
 
 [.contract]
 [[RegistryController]]
-=== `++RegistryController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/RegistryController.sol[{github-icon},role=heading-link]
+=== `++RegistryController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/RegistryController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/RegistryController.sol";
+import "@etherisc/gif-contracts/contracts/modules/RegistryController.sol";
 ```
 
 [.contract-index]
@@ -1669,11 +1669,11 @@ Deregister contract in certain release
 
 [.contract]
 [[TreasuryModule]]
-=== `++TreasuryModule++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/modules/TreasuryModule.sol[{github-icon},role=heading-link]
+=== `++TreasuryModule++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/modules/TreasuryModule.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/modules/TreasuryModule.sol";
+import "@etherisc/gif-contracts/contracts/modules/TreasuryModule.sol";
 ```
 
 [.contract-index]

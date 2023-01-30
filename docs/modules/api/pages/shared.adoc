@@ -41,11 +41,11 @@ NOTE: This document is better viewed at https://docs.etherisc.com/contracts/api/
 
 [.contract]
 [[CoreController]]
-=== `++CoreController++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/shared/CoreController.sol[{github-icon},role=heading-link]
+=== `++CoreController++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/shared/CoreController.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/shared/CoreController.sol";
+import "@etherisc/gif-contracts/contracts/shared/CoreController.sol";
 ```
 
 [.contract-index]
@@ -115,11 +115,11 @@ import "@openzeppelin/contracts/shared/CoreController.sol";
 
 [.contract]
 [[CoreProxy]]
-=== `++CoreProxy++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/shared/CoreProxy.sol[{github-icon},role=heading-link]
+=== `++CoreProxy++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/shared/CoreProxy.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/shared/CoreProxy.sol";
+import "@etherisc/gif-contracts/contracts/shared/CoreProxy.sol";
 ```
 
 [.contract-index]
@@ -208,11 +208,11 @@ import "@openzeppelin/contracts/shared/CoreProxy.sol";
 
 [.contract]
 [[TransferHelper]]
-=== `++TransferHelper++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/shared/TransferHelper.sol[{github-icon},role=heading-link]
+=== `++TransferHelper++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/shared/TransferHelper.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/shared/TransferHelper.sol";
+import "@etherisc/gif-contracts/contracts/shared/TransferHelper.sol";
 ```
 
 [.contract-index]
@@ -259,11 +259,11 @@ import "@openzeppelin/contracts/shared/TransferHelper.sol";
 
 [.contract]
 [[WithRegistry]]
-=== `++WithRegistry++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.0.0-rc.1-0/contracts/shared/WithRegistry.sol[{github-icon},role=heading-link]
+=== `++WithRegistry++` link:https://github.com/etherisc/gif-contracts/blob/release-v2.0.0/contracts/shared/WithRegistry.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/shared/WithRegistry.sol";
+import "@etherisc/gif-contracts/contracts/shared/WithRegistry.sol";
 ```
 
 [.contract-index]
