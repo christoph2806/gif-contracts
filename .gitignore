@@ -3,6 +3,7 @@ __pycache__
 .history
 .hypothesis/
 build/
+artifacts/
 reports/
 dump_sources/
 node_modules
@@ -12,5 +13,11 @@ tmp/
 
 .DS_Store
 .vscode/launch.json
+
+.gradle
+gradle/
+settings.gradle
+gradlew*
+build.gradle
 
 etherisc*.tgz

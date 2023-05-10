@@ -10,6 +10,12 @@ contract TestCoin is ERC20 {
 
     uint256 public constant INITIAL_SUPPLY = 10**24;
 
+    /**
+     * @dev Constructor function that initializes the ERC20 token with a given name, symbol, and initial supply.
+     * @param NAME The name of the ERC20 token.
+     * @param SYMBOL The symbol of the ERC20 token.
+     * @param INITIAL_SUPPLY The initial supply of the ERC20 token.
+     */
     constructor()
         ERC20(NAME, SYMBOL)
     {
@@ -27,6 +33,11 @@ contract TestCoinX is ERC20 {
 
     uint256 public constant INITIAL_SUPPLY = 10**24;
 
+    /**
+     * @dev Constructor function that creates a new instance of the ERC20 token with the given name and symbol. It also mints the initial supply and assigns it to the deployer's address.
+     * @param NAME The name of the ERC20 token.
+     * @param SYMBOL The symbol of the ERC20 token.
+     */
     constructor()
         ERC20(NAME, SYMBOL)
     {

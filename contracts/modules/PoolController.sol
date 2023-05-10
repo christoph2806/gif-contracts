@@ -80,6 +80,11 @@ contract PoolController is
         _;
     }
 
+    /**
+     * @dev This function is called after the contract is initialized and sets the addresses of the ComponentController, PolicyController, and BundleController contracts.
+     *
+     *
+     */
     function _afterInitialize() internal override onlyInitializing {
         _component = ComponentController(_getContractAddress("Component"));
         _policy = PolicyController(_getContractAddress("Policy"));
@@ -87,6 +92,16 @@ contract PoolController is
     }
 
 
+    /**
+     * @dev Registers a new riskpool with the given parameters.
+     * @param riskpoolId The ID of the riskpool to be registered.
+     * @param wallet The address of the wallet associated with the riskpool.
+     * @param erc20Token The address of the ERC20 token associated with the riskpool.
+     * @param collateralizationLevel The collateralization level of the riskpool.
+     * @param sumOfSumInsuredCap The sum of sum insured cap of the riskpool.
+     * @notice This function emits 1 events: 
+     * - LogRiskpoolRegistered
+     */
     function registerRiskpool(
         uint256 riskpoolId, 
         address wallet,
@@ -125,6 +140,18 @@ contract PoolController is
         emit LogRiskpoolRegistered(riskpoolId, wallet, erc20Token, collateralizationLevel, sumOfSumInsuredCap);
     }
 
+    /**
+     * @dev Sets the riskpool ID for a given product ID.
+     * @param productId The ID of the product.
+     * @param riskpoolId The ID of the riskpool to be set for the product.
+     *
+     * Emits a {RiskpoolForProductSet} event indicating the riskpool has been set for the product.
+     * Requirements:
+     * - The caller must have the `INSTANCE_OPERATOR` permission.
+     * - The product ID must exist.
+     * - The riskpool ID must exist.
+     * - The riskpool ID must not have already been set for the product.
+     */
     function setRiskpoolForProduct(uint256 productId, uint256 riskpoolId) 
         external override
         onlyInstanceOperatorService
@@ -136,6 +163,11 @@ contract PoolController is
         _riskpoolIdForProductId[productId] = riskpoolId;
     }
 
+    /**
+     * @dev Adds funds to a specific riskpool.
+     * @param riskpoolId The ID of the riskpool that will receive the funds.
+     * @param amount The amount of funds to be added to the riskpool.
+     */
     function fund(uint256 riskpoolId, uint256 amount) 
         external
         onlyRiskpoolService
@@ -147,6 +179,11 @@ contract PoolController is
         pool.updatedAt = block.timestamp;
     }
 
+    /**
+     * @dev Allows the Riskpool service to defund the specified Riskpool by the given amount.
+     * @param riskpoolId The ID of the Riskpool to defund.
+     * @param amount The amount of funds to be defunded from the Riskpool.
+     */
     function defund(uint256 riskpoolId, uint256 amount) 
         external
         onlyRiskpoolService
@@ -161,6 +198,19 @@ contract PoolController is
         pool.updatedAt = block.timestamp;
     }
 
+    /**
+     * @dev Underwrites a policy application by calculating the required collateral amount and asking the responsible riskpool to secure the application.
+     * @param processId The ID of the policy application process.
+     * @return success A boolean indicating whether the collateralization process was successful or not.
+     *
+     * Emits a LogRiskpoolRequiredCollateral event with the sum insured amount and calculated collateral amount.
+     * Throws an error if the application state is not "Applied" or if the riskpool's sum insured cap would be exceeded by underwriting this application.
+     * Emits a LogRiskpoolCollateralizationSucceeded event if the collateralization process was successful, and a LogRiskpoolCollateralizationFailed event otherwise.
+     * @notice This function emits 3 events: 
+     * - LogRiskpoolCollateralizationFailed
+     * - LogRiskpoolCollateralizationSucceeded
+     * - LogRiskpoolRequiredCollateral
+     */
     function underwrite(bytes32 processId) 
         external override 
         onlyPolicyFlow("Pool")
@@ -208,6 +258,12 @@ contract PoolController is
     }
 
 
+    /**
+     * @dev Calculates the required collateral amount for a given riskpool and sum insured amount.
+     * @param riskpoolId The ID of the riskpool.
+     * @param sumInsuredAmount The sum insured amount.
+     * @return collateralAmount The required collateral amount.
+     */
     function calculateCollateral(uint256 riskpoolId, uint256 sumInsuredAmount) 
         public
         view 
@@ -229,6 +285,11 @@ contract PoolController is
     }
 
 
+    /**
+     * @dev Processes the premium payment for a policy.
+     * @param processId The ID of the process.
+     * @param amount The amount of premium paid.
+     */
     function processPremium(bytes32 processId, uint256 amount) 
         external override
         onlyPolicyFlow("Pool")
@@ -245,6 +306,22 @@ contract PoolController is
     }
 
 
+    /**
+     * @dev Process a payout for a policy flow in the Pool.
+     * @param processId The ID of the process to be paid out.
+     * @param amount The amount to be paid out.
+     *
+     * Emits a {PolicyPayoutProcessed} event.
+     *
+     * Requirements:
+     * - Caller must be the Pool contract.
+     * - Pool must be active for the given process.
+     * - Riskpool ID must be valid.
+     * - Pool capital must be greater than or equal to the payout amount.
+     * - Pool locked capital must be greater than or equal to the payout amount.
+     * - Pool balance must be greater than or equal to the payout amount.
+     *
+     */
     function processPayout(bytes32 processId, uint256 amount) 
         external override
         onlyPolicyFlow("Pool")
@@ -268,6 +345,15 @@ contract PoolController is
     }
 
 
+    /**
+     * @dev Releases a policy's collateral from the riskpool.
+     * @param processId The unique identifier of the policy.
+     *
+     *
+     * Emits a LogRiskpoolCollateralReleased event.
+     * @notice This function emits 1 events: 
+     * - LogRiskpoolCollateralReleased
+     */
     function release(bytes32 processId) 
         external override
         onlyPolicyFlow("Pool")
@@ -297,6 +383,11 @@ contract PoolController is
         emit LogRiskpoolCollateralReleased(riskpoolId, processId, remainingCollateralAmount);
     }
 
+    /**
+     * @dev Sets the maximum number of active bundles for a given riskpool ID.
+     * @param riskpoolId The ID of the riskpool.
+     * @param maxNumberOfActiveBundles The maximum number of active bundles to be set.
+     */
     function setMaximumNumberOfActiveBundles(uint256 riskpoolId, uint256 maxNumberOfActiveBundles)
         external 
         onlyRiskpoolService
@@ -305,26 +396,58 @@ contract PoolController is
         _maxmimumNumberOfActiveBundlesForRiskpoolId[riskpoolId] = maxNumberOfActiveBundles;
     }
 
+    /**
+     * @dev Returns the maximum number of active bundles for a given riskpool ID.
+     * @param riskpoolId The ID of the riskpool.
+     * @return maximumNumberOfActiveBundles The maximum number of active bundles for the given riskpool ID.
+     */
     function getMaximumNumberOfActiveBundles(uint256 riskpoolId) public view returns(uint256 maximumNumberOfActiveBundles) {
         return _maxmimumNumberOfActiveBundlesForRiskpoolId[riskpoolId];
     }
     
+    /**
+     * @dev Returns the number of risk pools created.
+     * @return idx The number of risk pools as a uint256.
+     */
     function riskpools() external view returns(uint256 idx) { return _riskpoolIds.length; }
 
 
+    /**
+     * @dev Returns the risk pool data for a given risk pool ID.
+     * @param riskpoolId The ID of the risk pool to retrieve.
+     * @return riskPool The risk pool data, returned as a Pool struct.
+     *
+     * Throws a POL-040 error if the risk pool is not registered.
+     */
     function getRiskpool(uint256 riskpoolId) public view returns(IPool.Pool memory riskPool) {
         riskPool = _riskpools[riskpoolId];
         require(riskPool.createdAt > 0, "ERROR:POL-040:RISKPOOL_NOT_REGISTERED");
     }
 
+    /**
+     * @dev Returns the risk pool ID associated with the given product ID.
+     * @param productId The ID of the product for which to retrieve the risk pool ID.
+     * @return riskpoolId The ID of the risk pool associated with the given product ID.
+     */
     function getRiskPoolForProduct(uint256 productId) external view returns (uint256 riskpoolId) {
         return _riskpoolIdForProductId[productId];
     }
 
+    /**
+     * @dev Returns the number of active bundles for a given risk pool ID.
+     * @param riskpoolId The ID of the risk pool to get the number of active bundles for.
+     * @return numberOfActiveBundles The number of active bundles for the given risk pool ID.
+     */
     function activeBundles(uint256 riskpoolId) external view returns(uint256 numberOfActiveBundles) {
         return EnumerableSet.length(_activeBundleIdsForRiskpoolId[riskpoolId]);
     }
 
+    /**
+     * @dev Returns the active bundle ID at the specified index for the given risk pool ID.
+     * @param riskpoolId The ID of the risk pool.
+     * @param bundleIdx The index of the active bundle ID to be returned.
+     * @return bundleId The active bundle ID at the specified index.
+     */
     function getActiveBundleId(uint256 riskpoolId, uint256 bundleIdx) external view returns(uint256 bundleId) {
         require(
             bundleIdx < EnumerableSet.length(_activeBundleIdsForRiskpoolId[riskpoolId]),
@@ -334,6 +457,11 @@ contract PoolController is
         return EnumerableSet.at(_activeBundleIdsForRiskpoolId[riskpoolId], bundleIdx);
     }
 
+    /**
+     * @dev Adds a bundle ID to the active set for a specific riskpool ID.
+     * @param riskpoolId The ID of the riskpool.
+     * @param bundleId The ID of the bundle to be added to the active set.
+     */
     function addBundleIdToActiveSet(uint256 riskpoolId, uint256 bundleId) 
         external
         onlyRiskpoolService
@@ -350,6 +478,11 @@ contract PoolController is
         EnumerableSet.add(_activeBundleIdsForRiskpoolId[riskpoolId], bundleId);
     }
 
+    /**
+     * @dev Removes a bundle ID from the active set for a given risk pool ID.
+     * @param riskpoolId The ID of the risk pool.
+     * @param bundleId The ID of the bundle to be removed from the active set.
+     */
     function removeBundleIdFromActiveSet(uint256 riskpoolId, uint256 bundleId) 
         external
         onlyRiskpoolService
@@ -362,10 +495,19 @@ contract PoolController is
         EnumerableSet.remove(_activeBundleIdsForRiskpoolId[riskpoolId], bundleId);
     }
 
+    /**
+     * @dev Returns the full collateralization level of the contract.
+     * @return FULL_COLLATERALIZATION_LEVEL The full collateralization level of the contract.
+     */
     function getFullCollateralizationLevel() external pure returns (uint256) {
         return FULL_COLLATERALIZATION_LEVEL;
     }
 
+    /**
+     * @dev Returns the Riskpool contract instance associated with the given policy metadata.
+     * @param metadata The metadata of the policy.
+     * @return riskpool The Riskpool contract instance.
+     */
     function _getRiskpoolComponent(IPolicy.Metadata memory metadata) internal view returns (IRiskpool riskpool) {
         uint256 riskpoolId = _riskpoolIdForProductId[metadata.productId];
         require(riskpoolId > 0, "ERROR:POL-045:RISKPOOL_DOES_NOT_EXIST");
@@ -373,6 +515,11 @@ contract PoolController is
         riskpool = _getRiskpoolForId(riskpoolId);
     }
 
+    /**
+     * @dev Returns the Riskpool contract instance for a given riskpoolId.
+     * @param riskpoolId The ID of the riskpool to retrieve the Riskpool contract instance for.
+     * @return riskpool The Riskpool contract instance.
+     */
     function _getRiskpoolForId(uint256 riskpoolId) internal view returns (IRiskpool riskpool) {
         require(_component.isRiskpool(riskpoolId), "ERROR:POL-046:COMPONENT_NOT_RISKPOOL");
         
