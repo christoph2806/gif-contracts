@@ -34,6 +34,10 @@ contract RegistryController is
     mapping(bytes32 /* release */ => uint256 /* number of contracts in release */) public _contractsInRelease;
     mapping(bytes32 /* release */ => EnumerableSet.Bytes32Set /* contract names */) private _contractNames;
 
+    /**
+     * @dev Initializes the GIF registry with an initial release and sets the deployment block for reading logs.
+     * @param _initialRelease The initial release of the GIF instance.
+     */
     function initializeRegistry(bytes32 _initialRelease) public initializer {
         // _setupRegistry(address(this));
         _registry = this;
@@ -52,6 +56,12 @@ contract RegistryController is
         startBlock = block.number;
     }
 
+    /**
+     * @dev Verifies if the provided 'sender' address matches the address of the contract with the given '_contractName' in the current release.
+     * @param sender The address to be verified.
+     * @param _contractName The name of the contract to compare the 'sender' address with.
+     * @return _senderMatches A boolean indicating whether the 'sender' address matches the address of the contract with the given '_contractName'.
+     */
     function ensureSender(address sender, bytes32 _contractName) 
         external view override 
         returns(bool _senderMatches) 
@@ -61,6 +71,10 @@ contract RegistryController is
 
     /**
      * @dev get current release
+     */
+    /**
+     * @dev Returns the current release identifier.
+     * @return _release The release identifier.
      */
     function getRelease() 
         external override view 
@@ -72,6 +86,11 @@ contract RegistryController is
     /**
      * @dev Get contract's address in the current release
      */
+    /**
+     * @dev Returns the address of a contract by its name.
+     * @param _contractName The name of the contract.
+     * @return _addr The address of the contract.
+     */
     function getContract(bytes32 _contractName)
         public override view
         returns (address _addr)
@@ -81,6 +100,12 @@ contract RegistryController is
 
     /**
      * @dev Register contract in the current release
+     */
+    /**
+     * @dev Registers a contract with a given name and address.
+     *
+     * @param _contractName The name of the contract to register.
+     * @param _contractAddress The address of the contract to register.
      */
     function register(bytes32 _contractName, address _contractAddress)
         external override
@@ -92,6 +117,10 @@ contract RegistryController is
     /**
      * @dev Deregister contract in the current release
      */
+    /**
+     * @dev Deregisters a contract from the current release.
+     * @param _contractName The name of the contract to be deregistered.
+     */
     function deregister(bytes32 _contractName) 
         external override 
         onlyInstanceOperator 
@@ -101,6 +130,12 @@ contract RegistryController is
 
     /**
      * @dev Get contract's address in certain release
+     */
+    /**
+     * @dev Returns the address of a specific contract within a given release.
+     * @param _release The release identifier.
+     * @param _contractName The name of the contract to retrieve.
+     * @return _addr The address of the contract.
      */
     function getContractInRelease(bytes32 _release, bytes32 _contractName)
         external override view
@@ -112,6 +147,12 @@ contract RegistryController is
     /**
      * @dev Register contract in certain release
      */
+    /**
+     * @dev Registers a contract in a specific release.
+     * @param _release The release identifier.
+     * @param _contractName The name of the contract to register.
+     * @param _contractAddress The address of the contract to register.
+     */
     function registerInRelease(bytes32 _release, bytes32 _contractName, address _contractAddress)  
         external override 
         onlyInstanceOperator
@@ -119,6 +160,11 @@ contract RegistryController is
         _registerInRelease(_release, false, _contractName, _contractAddress);
     }
 
+    /**
+     * @dev Deregisters a contract name from a specific release.
+     * @param _release The release from which to deregister the contract name.
+     * @param _contractName The contract name to deregister.
+     */
     function deregisterInRelease(bytes32 _release, bytes32 _contractName)
         external override
         onlyInstanceOperator
@@ -128,6 +174,18 @@ contract RegistryController is
 
     /**
      * @dev Create new release, copy contracts from previous release
+     */
+    /**
+     * @dev Prepares a new release by copying all contracts from the current release to the new one.
+     * @param _newRelease The name of the new release.
+     *
+     * Requirements:
+     * - The current release must not be empty.
+     * - The new release must be empty.
+     *
+     * Emits a {LogReleasePrepared} event.
+     * @notice This function emits 1 events: 
+     * - LogReleasePrepared
      */
     function prepareRelease(bytes32 _newRelease) 
         external override 
@@ -157,16 +215,32 @@ contract RegistryController is
         emit LogReleasePrepared(release);
     }
 
+    /**
+     * @dev Returns the number of contracts in the current release.
+     *
+     * @return _numberOfContracts The total number of contracts in the current release.
+     */
     function contracts() external override view returns (uint256 _numberOfContracts) {
         _numberOfContracts = EnumerableSet.length(_contractNames[release]);
     }
 
+    /**
+     * @dev Returns the name of the contract at the specified index in the contractNames set.
+     * @param idx The index of the contract name to retrieve.
+     * @return _contractName The name of the contract at the specified index in the contractNames set.
+     */
     function contractName(uint256 idx) external override view returns (bytes32 _contractName) {
         _contractName = EnumerableSet.at(_contractNames[release], idx);
     }
 
     /**
      * @dev Get contract's address in certain release
+     */
+    /**
+     * @dev Returns the address of a contract in a specific release.
+     * @param _release The release identifier.
+     * @param _contractName The name of the contract to retrieve.
+     * @return _addr The address of the requested contract.
      */
     function _getContractInRelease(bytes32 _release, bytes32 _contractName)
         internal view
@@ -177,6 +251,25 @@ contract RegistryController is
 
     /**
      * @dev Register contract in certain release
+     */
+    /**
+     * @dev Registers a contract in a release.
+     * @param _release The release identifier.
+     * @param isNewRelease True if the release is new, false otherwise.
+     * @param _contractName The name of the contract.
+     * @param _contractAddress The address of the contract.
+     *
+     * Requirements:
+     * - The number of registered contracts must be less than MAX_CONTRACTS.
+     * - The release must be known, unless it is a new release.
+     * - The contract name must not be empty.
+     * - The contract name must not already exist in the release, unless it is the 'InstanceOperatorService' contract and it is registered with the owner address.
+     * - The contract address must not be zero.
+     * - The number of registered contracts must match the number of contract names in the release.
+     *
+     * Emits a LogContractRegistered event with the release identifier, contract name, contract address and a boolean indicating if the contract is new.
+     * @notice This function emits 1 events: 
+     * - LogContractRegistered
      */
     function _registerInRelease(
         bytes32 _release,
@@ -227,6 +320,21 @@ contract RegistryController is
 
     /**
      * @dev Deregister contract in certain release
+     */
+    /**
+     * @dev Internal function to deregister a contract in a specific release.
+     * @param _release The release identifier.
+     * @param _contractName The name of the contract to be deregistered.
+     *
+     * Requirements:
+     * - The function can only be called by the instance operator.
+     * - The contract to be deregistered must exist in the specified release.
+     *
+     * Removes the contract name from the set of contract names in the specified release,
+     * removes the contract from the mapping of contracts in the specified release,
+     * and emits a LogContractDeregistered event.
+     * @notice This function emits 1 events: 
+     * - LogContractDeregistered
      */
     function _deregisterInRelease(bytes32 _release, bytes32 _contractName)
         internal

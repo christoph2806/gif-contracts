@@ -1,0 +1,92 @@
+
+> Configure project :
+
+The 'org.jetbrains.kotlin.platform.*' plugins are deprecated and will no longer be available in Kotlin 1.4.
+Please migrate the project to the 'org.jetbrains.kotlin.multiplatform' plugin.
+See: https://kotlinlang.org/docs/reference/building-mpp-with-gradle.html
+
+> Task :nodeSetup
+> Task :npmSetup SKIPPED
+> Task :resolveSolidity
+
+> Task :npmInstall
+npm notice created a lockfile as package-lock.json. You should commit this file.
+up to date in 0.329s
+found 0 vulnerabilities
+
+
+> Task :compileSolidity
+Error: Source "src/main/modules/ComponentController.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:4:1:
+  |
+4 | import "../modules/ComponentController.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "src/main/modules/PoolController.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:5:1:
+  |
+5 | import "../modules/PoolController.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "src/main/modules/PolicyController.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:6:1:
+  |
+6 | import "../modules/PolicyController.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "src/main/modules/QueryModule.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:7:1:
+  |
+7 | import "../modules/QueryModule.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "src/main/modules/TreasuryModule.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:8:1:
+  |
+8 | import "../modules/TreasuryModule.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "src/main/shared/WithRegistry.sol" not found: File outside of allowed directories.
+ --> src/main/solidity/PolicyDefaultFlow.sol:9:1:
+  |
+9 | import "../shared/WithRegistry.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@etherisc/gif-interface/contracts/modules/IPolicy.sol" not found: File outside of allowed directories.
+  --> src/main/solidity/PolicyDefaultFlow.sol:11:1:
+   |
+11 | import "@etherisc/gif-interface/contracts/modules/IPolicy.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@etherisc/gif-interface/contracts/modules/IRegistry.sol" not found: File outside of allowed directories.
+  --> src/main/solidity/PolicyDefaultFlow.sol:13:1:
+   |
+13 | import "@etherisc/gif-interface/contracts/modules/IRegistry.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Source "@etherisc/gif-interface/contracts/modules/IPool.sol" not found: File outside of allowed directories.
+  --> src/main/solidity/PolicyDefaultFlow.sol:14:1:
+   |
+14 | import "@etherisc/gif-interface/contracts/modules/IPool.sol";
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+> Task :compileSolidity FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileSolidity'.
+> Process 'command '/home/christoph/.web3j/solc/0.8.2/solc'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 8s
+4 actionable tasks: 4 executed
