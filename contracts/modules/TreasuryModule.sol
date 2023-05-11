@@ -92,9 +92,6 @@ contract TreasuryModule is
      * @dev Suspends the treasury contract, preventing any further transfers or withdrawals.
      *      Can only be called by the instance operator.
      *
-     * @param N/A
-     *
-     * @return N/A
      * @notice This function emits 1 events: 
      * - LogTreasurySuspended
      */
